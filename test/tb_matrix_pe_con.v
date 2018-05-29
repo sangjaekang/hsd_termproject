@@ -18,7 +18,7 @@ module tb_matrix_pe_con();
     wire BRAM_EN = 1;
     wire BRAM_RST = 0;
 
-    convert_pe_con #(
+    matrix_pe_con #(
         .VECTOR_SIZE(64),
         .L_RAM_SIZE(6)
     ) u_con (

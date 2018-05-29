@@ -31,3 +31,19 @@
     * Input 파일 : tb_convert_pe_ex1.txt
 
     * 정답지 : tb_convert_pe_ex1_out.txt
+
+4. ​**tb_matrix_pe_con.v**
+    * 목적
+      > 16x16 matrix와 16 size vector의 연산이 정상적으로 동작하는지 확인[test bench이지만 SIZE를 줄임]
+
+    * Input 파일 : tb_matrix_pe_ex0.txt
+
+    * 정답지 : tb_matrix_pe_ex0_out.txt
+
+5. ​**tb_matrix_pe_con.v**
+    * 목적
+      > 16x16 matrix와 16 size vector의 연산이 정상적으로 동작하는지 확인[최종 프로젝트에 대한 test bench]
+
+    * Input 파일 : tb_matrix_pe_ex1.txt
+
+    * 정답지 : tb_matrix_pe_ex1_out.txt

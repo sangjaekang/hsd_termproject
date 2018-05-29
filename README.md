@@ -36,6 +36,10 @@
 
       : convert_bit.v를 pe_con.v에 연결시켜서 16bit big-endian을 읽어서 32bit little-endian으로 바꾸어 pe_con에서 연산하는 코드
 
+    * matrix_pe_con.v
+
+      : term-project 최종 결과, Matrix x Vector 연산하는 코드
+
 2. **test**
 
     * **디렉토리**

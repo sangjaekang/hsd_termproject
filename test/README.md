@@ -38,7 +38,7 @@
 
     * Input 파일 : tb_matrix_pe_ex0.txt
 
-    * 정답지 : tb_matrix_pe_ex0_out.txt
+    * 정답지 : tb_matrix_pe_ex0_answer.csv
 
 5. ​**tb_matrix_pe_con.v**
     * 목적
@@ -46,4 +46,4 @@
 
     * Input 파일 : tb_matrix_pe_ex1.txt
 
-    * 정답지 : tb_matrix_pe_ex1_out.txt
+    * 정답지 : tb_matrix_pe_ex1_answer.csv

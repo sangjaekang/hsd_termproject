@@ -12,5 +12,14 @@
 
    * 결과 : 정답
 
-2. ​
+2. ​**tb_basic_pe_con.v**
+    * 목적
+      > 64 vector size의 32bit big endian이 정상적으로 동작하는지 확인
+
+    * Input 파일 :
+        1. tb_basic_pe_ex0.txt
+        2. tb_basic_pe_ex1.txt
+    * 정답지 :
+        1. tb_basic_pe_ex0_out.txt
+        2. tb_basic_pe_ex1_out.txt
 

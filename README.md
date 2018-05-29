@@ -6,12 +6,12 @@
 
 1. **source**
 
-    * bram.v 
+    * bram.v
 
       : 이전 lab에서 제공된 bram.v
 
       ````verilog
-      $readmemh(INIT_FILE, mem); 
+      $readmemh(INIT_FILE, mem);
       ````
 
       헥사로 읽는 코드를 바이트로 읽도록만 수정
@@ -31,6 +31,10 @@
     * convert_bit.v
 
       : 16bit big-endian을 읽어서 32bit little-endian으로 바꾸는 코드
+
+    * convert_pe_con.v
+
+      : convert_bit.v를 pe_con.v에 연결시켜서 16bit big-endian을 읽어서 32bit little-endian으로 바꾸어 pe_con에서 연산하는 코드
 
 2. **test**
 

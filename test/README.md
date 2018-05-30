@@ -47,3 +47,13 @@
     * Input 파일 : tb_matrix_pe_ex1.txt
 
     * 정답지 : tb_matrix_pe_ex1_answer.csv
+
+6. ​**tb_matrix_pe_con.v**
+    * 목적
+      > 조교님이 제공해주신 input.txt파일을 이용해서 연산이 정상적으로 동작하는지 확인
+
+    * Input 파일 :
+        1. input.txt
+        2. tb_matrix_pe_ex2.txt
+
+    * 정답지 : tb_matrix_pe_ex2_answer.csv

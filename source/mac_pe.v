@@ -36,8 +36,8 @@ module mac_pe #(
         if (!aresetn)
             dout_fb <= 'd0;
         else
-            if (dvalid)
-                dout_fb <= dout;
+            if (d_valid)
+                dout_fb <= d_out;
             else
                 dout_fb <= dout_fb;
 
@@ -66,6 +66,9 @@ module mac_pe #(
     );
     wire cvalid = avalid;
 
+    wire d_valid;
+    wire [31:0] d_out;
+
     floating_point_0 u_float_dsp (
         .aclk             (aclk),
         .aresetn          (aresetn),
@@ -75,8 +78,17 @@ module mac_pe #(
         .s_axis_b_tdata   (bout),
         .s_axis_c_tvalid  (cvalid),
         .s_axis_c_tdata   (dout_fb),
-        .m_axis_result_tvalid (dvalid),
-        .m_axis_result_tdata  (dout)
+        .m_axis_result_tvalid (d_valid),
+        .m_axis_result_tdata  (d_out)
+   );
+
+   float_to_fixed ff_d (
+       .aclk(aclk),
+       .aresetn(aresetn),
+       .s_axis_a_tvalid(d_valid),
+       .s_axis_a_tdata(d_out),
+       .m_axis_result_tvalid(dvalid),
+       .m_axis_result_tdata(dout)
    );
 
    endmodule

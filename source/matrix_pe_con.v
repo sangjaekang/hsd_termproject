@@ -80,7 +80,7 @@ module matrix_pe_con#(
         else
             state_d <= state;
 
-//part 2: determine state
+    //part 2: determine state
     // S_LOAD
     reg load_flag;
     wire load_flag_reset = !aresetn || load_done;
